@@ -1,0 +1,53 @@
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+c:\users\ryan\documents\visual studio 2015\Projects\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Ryan\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.pdb
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.pdb
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+C:\Users\Larry\Desktop\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.pdb
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+C:\Users\Larry\Documents\Programming\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.pdb
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
