@@ -20,6 +20,8 @@ namespace Hardware_Monitor
         {
             AsyncWriteData write = new AsyncWriteData();
 
+            Application.ApplicationExit += Application_ApplicationExit;
+
             thread = new Thread(new ThreadStart(write.writeData));
 
             thread.Start();
@@ -48,6 +50,25 @@ namespace Hardware_Monitor
             start.Enabled = false;
             stop.Enabled = true;
             status.Text = "Running";
+        }
+
+        private void Application_ApplicationExit(object sender, EventArgs e)
+        {
+            if(udp !=null)
+            {
+                udp.Abort();
+                udp.Join();
+            }
+            if(java != null)
+            {
+                java.CloseMainWindow();
+                java.Close();
+            }
+            if(thread != null)
+            {
+                thread.Abort();
+                thread.Join();
+            }
         }
 
         private void stop_Click(object sender, EventArgs e)

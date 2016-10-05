@@ -51,3 +51,14 @@ C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\De
 C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
 C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
 C:\Users\ryanm\Documents\Programming\C#\Hardware Monitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe.config
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware Monitor.exe
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware Monitor.pdb
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\bin\Debug\Hardware Monitor.exe
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\bin\Debug\Hardware Monitor.pdb
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\bin\Debug\OpenHardwareMonitorLib.pdb
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware Monitor.csprojResolveAssemblyReference.cache
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Form1.resources
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware_Monitor.Properties.Resources.resources
+C:\Users\ryanm\Documents\GitHub\hardwaremonitor\Hardware Monitor\obj\Debug\Hardware Monitor.csproj.GenerateResource.Cache
