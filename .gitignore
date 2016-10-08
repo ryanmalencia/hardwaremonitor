@@ -4,3 +4,5 @@
 *.pdb
 Hardware Monitor/bin/Debug/
 Hardware Monitor/obj/Debug/
+Hardware Monitor/bin/Release/
+Hardware Monitor/obj/Release/

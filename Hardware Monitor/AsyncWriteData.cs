@@ -1,4 +1,6 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
+using System.IO;
 using OpenHardwareMonitor.Hardware;
 
 namespace Hardware_Monitor
@@ -53,7 +55,6 @@ namespace Hardware_Monitor
         public object getGpuTemp()
         {
             string output = "";
-
 
             foreach (var hardwareitem in mycomputer.Hardware)
             {
@@ -182,7 +183,7 @@ namespace Hardware_Monitor
 
             string lines = "CPU Usage: " + cpuuse + "%!" + "RAM Free: " + ramuse + "MB!" + "GPU Usage: " + gpuuse + "%!Core Clock: " + gpucore + "!GPU Temp: " + gputempuse + "C";
 
-            System.IO.File.WriteAllText("C:\\Users\\ryanm\\Documents\\Programming\\Java\\ServerClient\\Server\\Usage.txt", lines);
+            File.WriteAllText(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor", "Usage.txt"),lines);
         }
     }
 }

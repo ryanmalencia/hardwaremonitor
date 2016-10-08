@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Threading;
-using System.IO;
-using System.Diagnostics;
 
 namespace Hardware_Monitor
 {
@@ -10,7 +8,9 @@ namespace Hardware_Monitor
     {
         public Thread thread;
         public Thread udp;
-        public Process java;
+        public Thread server;
+        public Server myserver;
+
         public Form1()
         {
             InitializeComponent();
@@ -28,24 +28,22 @@ namespace Hardware_Monitor
 
             while (!thread.IsAlive) ;
 
-            if (java == null)
-            {
-                java = new Process();
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                string args = "-jar " + Path.Combine(Environment.GetEnvironmentVariable("HardwareServer",EnvironmentVariableTarget.Machine), "MyServer.jar") + " 9999";
-                startInfo.Arguments = args;
-                startInfo.FileName = "java";
-                java.StartInfo = startInfo;
-                java.Start();
-            }
-
             BroadcastIP ip = new BroadcastIP();
 
             udp = new Thread(new ThreadStart(ip.startBroadcast));
 
             udp.Start();
 
-            while (!thread.IsAlive) ;
+            while (!udp.IsAlive) ;
+
+
+            myserver = new Server();
+
+            server = new Thread(new ThreadStart(myserver.startServer));
+
+            server.Start();
+
+            while (!server.IsAlive) ;
 
             start.Enabled = false;
             stop.Enabled = true;
@@ -59,10 +57,11 @@ namespace Hardware_Monitor
                 udp.Abort();
                 udp.Join();
             }
-            if(java != null)
+            if (server != null)
             {
-                java.CloseMainWindow();
-                java.Close();
+                myserver.running = false;
+                server.Abort();
+                server.Join();
             }
             if(thread != null)
             {
@@ -79,13 +78,9 @@ namespace Hardware_Monitor
             thread.Abort();
             thread.Join();
 
-            if (!java.HasExited)
-            {
-                java.CloseMainWindow();
-                java.Close();
-            }
-
-            java = null;
+            myserver.running = false;
+            server.Abort();
+            server.Join();
 
             start.Enabled = true;
             stop.Enabled = false;

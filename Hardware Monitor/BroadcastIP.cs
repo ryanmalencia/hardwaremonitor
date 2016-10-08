@@ -15,7 +15,7 @@ namespace Hardware_Monitor
 
         public void startBroadcast()
         {
-            string ip_address = GetLocalIPAddress();
+            string ip_address = IPInformation.GetLocalIPAddress();
 
             string text_to_send = ip_address + ":" + Dns.GetHostName();
 
@@ -47,19 +47,6 @@ namespace Hardware_Monitor
                 }
                 Thread.Sleep(3000);
             }
-        }
-
-        private string GetLocalIPAddress()
-        {
-            var host = Dns.GetHostEntry(Dns.GetHostName());
-            foreach (var ip in host.AddressList)
-            {
-                if (ip.AddressFamily == AddressFamily.InterNetwork)
-                {
-                    return ip.ToString();
-                }
-            }
-            throw new Exception("Local IP Address Not Found!");
         }
     }
 }
