@@ -15,17 +15,21 @@ namespace Hardware_Monitor
 
         public void startBroadcast()
         {
+            string ip_address = GetLocalIPAddress();
+
+            string text_to_send = ip_address + ":" + Dns.GetHostName();
+
+            string broadcast_ip = ip_address.Remove(ip_address.LastIndexOf('.')) + ".255";
+
             while (true)
             {
                 bool done = false;
 
                 Socket sending_socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
-                IPAddress send_to = IPAddress.Parse("10.0.0.255");
+                IPAddress send_to = IPAddress.Parse(broadcast_ip);
 
                 IPEndPoint sending_end_point = new IPEndPoint(send_to, 11000);
-
-                string text_to_send = GetLocalIPAddress();
 
                 byte[] send_buffer = Encoding.ASCII.GetBytes(text_to_send);
 
