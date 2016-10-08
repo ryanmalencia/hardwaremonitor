@@ -1,3 +1,6 @@
 *.suo
 *.exe
 *.dll
+*.pdb
+Hardware Monitor/bin/Debug/
+Hardware Monitor/obj/Debug/
