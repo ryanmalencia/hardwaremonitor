@@ -183,6 +183,8 @@ namespace Hardware_Monitor
 
             string lines = "CPU Usage: " + cpuuse + "%!" + "RAM Free: " + ramuse + "MB!" + "GPU Usage: " + gpuuse + "%!Core Clock: " + gpucore + "!GPU Temp: " + gputempuse + "C";
 
+            if (!Directory.Exists(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor")))
+                Directory.CreateDirectory(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor"));
             File.WriteAllText(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor", "Usage.txt"),lines);
         }
     }
