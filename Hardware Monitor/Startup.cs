@@ -4,14 +4,14 @@ using System.Threading;
 
 namespace Hardware_Monitor
 {
-    public partial class Form1 : Form
+    public partial class Startup : Form
     {
         public Thread thread;
         public Thread udp;
         public Thread server;
         public Server myserver;
 
-        public Form1()
+        public Startup()
         {
             InitializeComponent();
         }

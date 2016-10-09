@@ -1,6 +1,6 @@
 ﻿namespace Hardware_Monitor
 {
-    partial class Form1
+    partial class Startup
     {
         /// <summary>
         /// Required designer variable.
