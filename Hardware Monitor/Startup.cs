@@ -59,6 +59,7 @@ namespace Hardware_Monitor
             }
             if (server != null)
             {
+                myserver.stopServer();
                 myserver.running = false;
                 server.Abort();
                 server.Join();
@@ -78,6 +79,7 @@ namespace Hardware_Monitor
             thread.Abort();
             thread.Join();
 
+            myserver.stopServer();
             myserver.running = false;
             server.Abort();
             server.Join();

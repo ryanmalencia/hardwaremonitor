@@ -48,35 +48,50 @@ namespace Hardware_Monitor
         {
             while(running)
             {
-                Socket socket = listener.AcceptSocket();
+                Socket socket = getSocket();
 
-                if (socket.Connected)
+                if (socket != null)
                 {
-                    string filepath = Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"),"HardwareMonitor","Usage.txt");
-                    string response = "";
-                    string[] file = new string[1];
-
-                    try
+                    if (socket.Connected)
                     {
-                        file = File.ReadAllLines(filepath);
+                        string filepath = Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor", "Usage.txt");
+                        string response = "";
+                        string[] file = new string[1];
+
+                        try
+                        {
+                            file = File.ReadAllLines(filepath);
+                        }
+                        catch (Exception)
+                        {
+
+                            Console.WriteLine("Error reading file");
+                        }
+
+                        response = file[0];
+
+                        if (response != null)
+                        {
+                            byte[] sendData = Encoding.ASCII.GetBytes(response);
+
+                            socket.Send(sendData, sendData.Length, 0);
+                        }
                     }
-                    catch (Exception)
-                    {
-
-                        Console.WriteLine("Error reading file");
-                    }
-
-                    response = file[0];
-
-                    if (response != null)
-                    {
-                        byte[] sendData = Encoding.ASCII.GetBytes(response);
-
-                        socket.Send(sendData, sendData.Length, 0);
-                    }
+                    socket.Close();
                 }
-                socket.Close();
             }
+        }
+
+        private Socket getSocket()
+        {
+            Socket socket = null;
+
+            if (listener.Pending())
+            {
+                socket = listener.AcceptSocket();
+            }
+
+            return socket;
         }
     }
 }
