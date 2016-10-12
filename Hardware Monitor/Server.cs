@@ -79,6 +79,7 @@ namespace Hardware_Monitor
                     }
                     socket.Close();
                 }
+                Thread.Sleep(250);
             }
         }
 
