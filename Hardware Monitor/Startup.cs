@@ -36,8 +36,10 @@ namespace Hardware_Monitor
 
             while (!udp.IsAlive) ;
 
-
-            myserver = new Server();
+            if (myserver == null)
+                myserver = new Server();
+            else
+                myserver.running = true;
 
             server = new Thread(new ThreadStart(myserver.startServer));
 
@@ -59,7 +61,7 @@ namespace Hardware_Monitor
             }
             if (server != null)
             {
-                myserver.stopServer();
+                //myserver.stopServer();
                 myserver.running = false;
                 server.Abort();
                 server.Join();
@@ -79,7 +81,7 @@ namespace Hardware_Monitor
             thread.Abort();
             thread.Join();
 
-            myserver.stopServer();
+            //myserver.stopServer();
             myserver.running = false;
             server.Abort();
             server.Join();

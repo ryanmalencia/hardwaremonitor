@@ -167,21 +167,52 @@ namespace Hardware_Monitor
             return output;
         }
 
+        public object getGpuRamCounter()
+        {
+            string output = "";
+
+
+            foreach (var hardwareitem in mycomputer.Hardware)
+            {
+                if (hardwareitem.HardwareType == HardwareType.GpuAti || hardwareitem.HardwareType == HardwareType.GpuNvidia)
+                {
+                    hardwareitem.Update();
+                    foreach (IHardware subHardware in hardwareitem.SubHardware)
+                        subHardware.Update();
+                    foreach (var sensor in hardwareitem.Sensors)
+                    {
+                        if (sensor.SensorType == SensorType.Clock)
+                        {
+                            if (sensor.Name == "GPU Memory")
+                            {
+                                sensor.Hardware.Update();
+                                output = sensor.Value.ToString();
+                            }
+                        }
+                    }
+                }
+            }
+            return output;
+        }
+
         private void executeWriteData()
         {
             string cpuuse = "";
             string ramuse = "";
             string gpuuse = "";
             string gpucore = "";
+            string gpumem = "";
             string gputempuse = "";
+
 
             cpuuse = getCpuCounter().ToString();
             ramuse = getRamCounter().ToString();
             gpuuse = getGpuCounter().ToString();
             gpucore = getGpuCoreCounter().ToString();
             gputempuse = getGpuTemp().ToString();
+            gpumem = getGpuRamCounter().ToString();
 
-            string lines = "CPU Usage: " + cpuuse + "%!" + "RAM Free: " + ramuse + "MB!" + "GPU Usage: " + gpuuse + "%!Core Clock: " + gpucore + "!GPU Temp: " + gputempuse + "C";
+            string lines = "CPU Usage: " + cpuuse + "%!" + "RAM Free: " + ramuse + "MB!" + "GPU Usage: " + gpuuse + "%!Core Clock: " + gpucore + "!Mem Clock: " + gpumem + "!GPU Temp: " + gputempuse + "C";
 
             if (!Directory.Exists(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor")))
                 Directory.CreateDirectory(Path.Combine(Environment.ExpandEnvironmentVariables("%APPDATA%"), "HardwareMonitor"));
