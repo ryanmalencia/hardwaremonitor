@@ -6,3 +6,7 @@ Hardware Monitor/bin/Debug/
 Hardware Monitor/obj/Debug/
 Hardware Monitor/bin/Release/
 Hardware Monitor/obj/Release/
+.vs/Hardware Monitor/v15/Server/sqlite3/db.lock
+.vs/Hardware Monitor/v15/Server/sqlite3/storage.ide
+.vs/Hardware Monitor/v15/Server/sqlite3/storage.ide-shm
+*.ide-wal
